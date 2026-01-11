@@ -1,4 +1,4 @@
-# Gym Management System - BIT29 Group Project
+# Gym Management System - BIT29-A Group Project
 
 ## Project Overview
 
@@ -8,9 +8,9 @@ This is a full-featured Gym Management System developed for **Class BIT29**. It 
 **Class:** BIT29
 **Group Members:**
 
-1. [Student Name 1]
-2. [Student Name 2]
-3. [Student Name 3]
+1. Mohamed Aweys Iman
+2. Abdikafi Abdulkadir ALi 
+3. Mohamed Ahmed Ibrahim
 
 **Deadline:** January 12, 2026
 
@@ -48,3 +48,4 @@ This is a full-featured Gym Management System developed for **Class BIT29**. It 
 - Well-documented code with meaningful comments.
 - Follows conventional coding practices and indentation standards.
 #
+
