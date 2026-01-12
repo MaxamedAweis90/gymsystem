@@ -25,7 +25,7 @@ header('location:../index.php');
 
 <!--Header-part-->
 <div id="header">
-  <h1><a href="dashboard.html">Perfect Gym</a></h1>
+  <h1><a href="index.php">Perfect Gym</a></h1>
 </div>
 <!--close-Header-part--> 
 
@@ -122,7 +122,7 @@ $cnt = 1;
 <!--Footer-part-->
 
 <div class="row-fluid">
-  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By Naseeb Bajracharya</a> </div>
+  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By BIT29 Group</div>
 </div>
 
 <style>

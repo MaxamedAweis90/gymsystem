@@ -30,7 +30,7 @@ window.location="../attendance.php";
 </script>
 <?php
 }*/
- //else {<!-- Visit codeastro.com for more projects -->
+ // else { 
 
 
    $sql = "INSERT INTO attendance (user_id, curr_date,curr_time,present)

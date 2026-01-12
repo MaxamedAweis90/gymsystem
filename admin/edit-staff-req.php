@@ -1,11 +1,9 @@
 <?php
 session_start();
-//the isset function to check username is already loged in and stored on the session
 if(!isset($_SESSION['user_id'])){
 header('location:../index.php');	
 }
 ?>
-<!-- Visit codeastro.com for more projects -->
 <?php 
         
             if(isset($_POST['fullname'])){
@@ -16,7 +14,6 @@ header('location:../index.php');
             $address = $_POST["address"];
             $designation = $_POST["designation"];
             $id = $_POST["id"];
-            // <!-- Visit codeastro.com for more projects -->
             include 'dbcon.php';
             //code after connection is successfull
             //update query

@@ -5,7 +5,6 @@ if(!isset($_SESSION['user_id'])){
 header('location:../index.php');	
 }
 ?>
-<!-- Visit codeastro.com for more projects -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -122,11 +121,10 @@ header('location:../index.php');
 </div>
 
 <!--end-main-container-part-->
-<!-- Visit codeastro.com for more projects -->
 <!--Footer-part-->
 
 <div class="row-fluid">
-  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By Naseeb Bajracharya</a> </div>
+  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By BIT29 Group</div>
 </div>
 
 <style>

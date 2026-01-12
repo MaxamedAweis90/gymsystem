@@ -36,6 +36,6 @@ include "session.php";
 
 <?php 
 // Staff uses 'header.php' as their topheader, let's keep it OR rename it for consistency.
-include 'includes/header.php'; 
-include 'includes/sidebar.php';
+include '../includes/header.php'; 
+include '../includes/sidebar.php';
 ?>

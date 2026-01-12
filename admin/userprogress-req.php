@@ -5,7 +5,6 @@ if(!isset($_SESSION['user_id'])){
 header('location:../index.php');	
 }
 ?>
-<!-- Visit codeastro.com for more projects -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +28,6 @@ header('location:../index.php');
   <h1><a href="dashboard.html">Perfect Gym Admin</a></h1>
 </div>
 <!--close-Header-part--> 
-<!-- Visit codeastro.com for more projects -->
 
 <!--top-Header-menu-->
 <?php include 'includes/topheader.php'?>
@@ -40,7 +38,6 @@ header('location:../index.php');
   <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
 </div> -->
 <!--close-top-serch-->
-<!-- Visit codeastro.com for more projects -->
 <!--sidebar-menu-->
 <?php $page='manage-customer-progress'; include 'includes/sidebar.php'?>
 <!--sidebar-menu-->
@@ -130,7 +127,7 @@ header('location:../index.php');
 <!--Footer-part-->
 
 <div class="row-fluid">
-  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By Naseeb Bajracharya</a> </div>
+  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By BIT29 Group </div>
 </div>
 
 <style>

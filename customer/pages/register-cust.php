@@ -1,3 +1,19 @@
+<?php
+session_start();
+// Check if already logged in
+if (isset($_SESSION['user_id']) && isset($_SESSION['user_type'])) {
+    if ($_SESSION['user_type'] == 'customer') {
+        header('location:index.php');
+        exit();
+    } else if ($_SESSION['user_type'] == 'admin') {
+        header('location:../../admin/index.php');
+        exit();
+    } else if ($_SESSION['user_type'] == 'staff') {
+        header('location:../../staff/staff-pages/index.php');
+        exit();
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,11 +1,6 @@
 <?php
-session_start();
-//the isset function to check username is already loged in and stored on the session
-if(!isset($_SESSION['user_id'])){
-header('location:../index.php');	
-}
+include 'session.php';
 ?>
-<!-- Visit codeastro.com for more projects -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,7 +35,6 @@ header('location:../index.php');
   <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
 </div> -->
 <!--close-top-serch-->
-<!-- Visit codeastro.com for more projects -->
 <!--sidebar-menu-->
 <?php $page='members-update'; include 'includes/sidebar.php'?>
 <!--sidebar-menu-->
@@ -85,7 +79,6 @@ header('location:../index.php');
                   <th>Action</th>
                 </tr>
               </thead>";
-              // <!-- Visit codeastro.com for more projects -->
             while($row=mysqli_fetch_array($result)){
             
             echo"<tbody> 
@@ -120,9 +113,8 @@ header('location:../index.php');
 <!--end-main-container-part-->
 
 <!--Footer-part-->
-<!-- Visit codeastro.com for more projects -->
 <div class="row-fluid">
-  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By Naseeb Bajracharya</a> </div>
+  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By BIT29 Group</div>
 </div>
 
 <style>

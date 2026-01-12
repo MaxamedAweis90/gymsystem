@@ -5,7 +5,6 @@ if(!isset($_SESSION['user_id'])){
 header('location:../index.php');	
 }
 ?>
-<!-- Visit codeastro.com for more projects -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +22,6 @@ header('location:../index.php');
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<!-- Visit codeastro.com for more projects -->
 <!--Header-part-->
 <div id="header">
   <h1><a href="dashboard.html">Perfect Gym Admin</a></h1>
@@ -70,8 +68,7 @@ if(isset($_POST['fullname'])){
   $password = md5($password);
 
   $totalamount = $amount * $plan;
-  // <!-- Visit codeastro.com for more projects -->
-include 'dbcon.php';
+  // include 'dbcon.php';
 //code after connection is successfull
 $qry = "INSERT INTO members(fullname,username,password,dor,gender,services,amount,p_year,paid_date,plan,address,contact) values ('$fullname','$username','$password','$dor','$gender','$services','$totalamount','$p_year','$paid_date','$plan','$address','$contact')";
 $result = mysqli_query($conn,$qry); //query executes
@@ -136,9 +133,8 @@ if(!$result){
 <!--end-main-container-part-->
 
 <!--Footer-part-->
-<!-- Visit codeastro.com for more projects -->
 <div class="row-fluid">
-  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By Naseeb Bajracharya</a> </div>
+  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By BIT29 Group</div>
 </div>
 
 <style>

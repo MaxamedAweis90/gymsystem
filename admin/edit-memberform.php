@@ -1,11 +1,6 @@
 <?php
-session_start();
-//the isset function to check username is already loged in and stored on the session
-if(!isset($_SESSION['user_id'])){
-header('location:../index.php');	
-}
+include 'session.php';
 ?>
-<!-- Visit codeastro.com for more projects -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,7 +47,6 @@ $qry= "select * from members where user_id='$id'";
 $result=mysqli_query($conn,$qry);
 while($row=mysqli_fetch_array($result)){
 ?> 
-<!-- Visit codeastro.com for more projects -->
 <div id="content">
 <div id="content-header">
   <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="fas fa-home"></i> Home</a> <a href="#" class="tip-bottom">Manamge Members</a> <a href="#" class="current">Add Members</a> </div>
@@ -111,8 +105,7 @@ while($row=mysqli_fetch_array($result)){
         
         <div class="widget-content nopadding">
           <div class="form-horizontal">
-          <!-- Visit codeastro.com for more projects -->
-        </div>
+                  </div>
         <div class="widget-content nopadding">
           <div class="form-horizontal">
             <div class="control-group">
@@ -145,8 +138,7 @@ while($row=mysqli_fetch_array($result)){
     </div>
 
     
-    <!-- Visit codeastro.com for more projects -->
-    <div class="span6">
+        <div class="span6">
       <div class="widget-box">
         <div class="widget-title"> <span class="icon"> <i class="fas fa-align-justify"></i> </span>
           <h5>Contact Details</h5>
@@ -243,7 +235,7 @@ while($row=mysqli_fetch_array($result)){
 <!--Footer-part-->
 
 <div class="row-fluid">
-  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By Naseeb Bajracharya</a> </div>
+  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By BIT29 Group</div>
 </div>
 
 <style>

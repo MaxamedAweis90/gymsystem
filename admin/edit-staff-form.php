@@ -5,7 +5,6 @@ if(!isset($_SESSION['user_id'])){
 header('location:../index.php');	
 }
 ?>
-<!-- Visit codeastro.com for more projects -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +29,6 @@ header('location:../index.php');
 </div>
 <!--close-Header-part--> 
 
-<!-- Visit codeastro.com for more projects -->
 <!--top-Header-menu-->
 <?php include 'includes/topheader.php'?>
 <!--close-top-Header-menu-->
@@ -102,8 +100,7 @@ while($row=mysqli_fetch_array($result)){
         
         <div class="widget-content nopadding">
           <div class="form-horizontal">
-          <!-- Visit codeastro.com for more projects -->
-        </div>
+                  </div>
         <div class="widget-content nopadding">
           
           </div>
@@ -152,10 +149,8 @@ while($row=mysqli_fetch_array($result)){
           </div>
 
            
-<!-- Visit codeastro.com for more projects -->
             <div class="form-actions text-center">
-             <!-- user's ID is hidden here --><!-- Visit codeastro.com for more projects -->
-             <input type="hidden" name="id" value="<?php echo $row['user_id'];?>">
+             <!-- user's ID is hidden here -->             <input type="hidden" name="id" value="<?php echo $row['user_id'];?>">
               <button type="submit" class="btn btn-success">Update Staff Details</button>
             </div>
 
@@ -180,13 +175,12 @@ while($row=mysqli_fetch_array($result)){
   </div>
 </div>
 
-<!-- Visit codeastro.com for more projects -->
 <!--end-main-container-part-->
 
 <!--Footer-part-->
 
 <div class="row-fluid">
-  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By Naseeb Bajracharya</a> </div>
+  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By BIT29 Group</div>
 </div>
 
 

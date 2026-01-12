@@ -8,16 +8,16 @@
   </div>
   <ul>
     <li class="<?php if($page=='dashboard'){ echo 'active'; }?>"><a href="index.php"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a> </li>
-    <li class="submenu <?php if($page=='members'){ echo 'active open'; }?>"> <a href="#"><i class="fas fa-users"></i> <span>Manage Members</span> <span class="label label-important"></span></a>
+    <li class="submenu <?php if($page=='members' || $page=='members-entry' || $page=='members-remove' || $page=='members-update'){ echo 'active open'; }?>"> <a href="#"><i class="fas fa-users"></i> <span>Manage Members</span> <span class="label label-important"></span></a>
       <ul>
-        <li><a href="members.php">List All Members</a></li>
-        <li><a href="member-entry.php">Add Members</a></li>
-        <li><a href="remove-member.php">Remove Members</a></li>
-        <li><a href="edit-member.php">Update Member Details</a></li>
+        <li class="<?php if($page=='members'){ echo 'active'; }?>"><a href="members.php">List All Members</a></li>
+        <li class="<?php if($page=='members-entry'){ echo 'active'; }?>"><a href="member-entry.php">Add Members</a></li>
+        <li class="<?php if($page=='members-remove'){ echo 'active'; }?>"><a href="remove-member.php">Remove Members</a></li>
+        <li class="<?php if($page=='members-update'){ echo 'active'; }?>"><a href="edit-member.php">Update Member Details</a></li>
       </ul>
     </li>
 
-    <li class="submenu"> <a href="#"><i class="fas fa-dumbbell"></i> <span>Gym Equipment</span> <span class="label label-important"><?php include 'dashboard-equipcount.php';?> </span></a>
+    <li class="submenu <?php if($page=='list-equip' || $page=='add-equip' || $page=='remove-equip' || $page=='update-equip'){ echo 'active open'; }?>"> <a href="#"><i class="fas fa-dumbbell"></i> <span>Gym Equipment</span> <span class="label label-important"><?php include 'dashboard-equipcount.php';?> </span></a>
     <ul>
         <li class="<?php if($page=='list-equip'){ echo 'active'; }?>"><a href="equipment.php"><i class="fas fa-arrow-right"></i> List Gym Equipment</a></li>
         <li class="<?php if($page=='add-equip'){ echo 'active'; }?>"><a href="equipment-entry.php"><i class="fas fa-arrow-right"></i> Add Equipment</a></li>
@@ -48,6 +48,5 @@
 
      
    
-    <!-- Visit codeastro.com for more projects -->
   </ul>
 </div>

@@ -4,7 +4,6 @@
       header('location:../index.php');	
     }
 ?>
-<!-- Visit codeastro.com for more projects -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +38,6 @@
   <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
 </div> -->
 <!--close-top-serch-->
-<!-- Visit codeastro.com for more projects -->
 <!--sidebar-menu-->
 <?php $page='update-equip'; include 'includes/sidebar.php'?>
 
@@ -111,8 +109,7 @@
                     echo"</div>";
                     echo"</div>";
                 echo"</div>";
-                // <!-- Visit codeastro.com for more projects -->
-            }
+                            }
 
             }else{
                 echo"<h3>YOU ARE NOT AUTHORIZED TO REDIRECT THIS PAGE. GO BACK to <a href='index.php'> DASHBOARD </a></h3>";
@@ -126,11 +123,10 @@
 </div>
 
 <!--end-main-container-part-->
-<!-- Visit codeastro.com for more projects -->
 <!--Footer-part-->
 
 <div class="row-fluid">
-  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By Naseeb Bajracharya</a> </div>
+  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By BIT29 Group</div>
 </div>
 
 <style>

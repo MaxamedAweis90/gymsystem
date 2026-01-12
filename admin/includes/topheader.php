@@ -10,4 +10,4 @@
     
     <li class=""><a title="" href="../logout.php"><i class="fas fa-share-square"></i> <span class="text">Logout</span></a></li>
   </ul>
-</div><!-- Visit codeastro.com for more projects -->
+</div>

@@ -1,51 +1,54 @@
-# Gym Management System - BIT29-A Group Project
+# Gym Management System
 
-## Project Overview
+## Group Information
 
-This is a full-featured Gym Management System developed for **Class BIT29**. It implements modern web development concepts using PHP and MySQL, focusing on security, user management, and seamless UI/UX.
-
-**Group ID:** GYM-BIT29-01
-**Class:** BIT29
+**Group** 2
+**Class:** BIT29  
 **Group Members:**
 
-1. Mohamed Aweys Iman
-2. Abdikafi Abdulkadir ALi 
-3. Mohamed Ahmed Ibrahim
+1. Mohamed Aweys Iman **ID:** 202200001
+2. Abdikafi Abdulkadir ALi **ID:** 202200002
+3. Mohamed Ahmed Ibrahim **ID:** 202200003
 
-**Deadline:** January 12, 2026
+---
 
-## Key Features
+## Project Description
 
-- **Dynamic Content**: All website content is read from the MySQL database.
-- **Advanced Authentication**:
-  - Secure Session management.
-  - Automatic 5-minute session expiry.
-  - "Remember Me" functionality using Cookies.
-- **User Types**: Supports Admin, Staff, and Customer roles.
-- **Registration Flow**:
-  - Detailed profile creation including profile picture upload.
-  - Account activation flow (Pending to Active).
-- **Control Panel**: A comprehensive dashboard for managing gym activities, members, and reports.
-- **Responsive Design**: Modern and professional interface built with CSS and Bootstrap.
+This is a full-featured Gym Management System developed for our Class **BIT29** project. It implements modern web development concepts using PHP and MySQL, focusing on security, user management, and seamless UI/UX. The system is designed to streamline the day-to-day operations of a fitness center, enabling efficient management of members, staff, equipment, and payments.
 
-## Installation Instructions
+### Key Features
 
-1. Copy the `gymsystem` folder to your XAMPP `htdocs` directory.
-2. Open [phpMyAdmin](http://localhost/phpmyadmin) and create a database named `gymnsb`.
-3. Import the database file: `DATABASE FILE/gymnsb.sql`.
-4. Run `db_update.php` once to finalize the schema for BIT29 requirements.
-5. Visit `http://localhost/gymsystem/index.php` to access the system.
+- **Three User Roles**: Admin, Staff, and Customer panels.
+- **Member Management**: Complete lifecycle management from registration to active status.
+- **Equipment Tracking**: Inventory management for gum equipment and purchases.
+- **Reporting**: Visual charts and detailed reports for gym performance.
+- **Security**: Secure session management and authentication.
 
-## Implementation Details
+---
 
-- **PHP Concepts used**: Variables, Loops, Functions, Sessions, Cookies, Form Processing, File Uploads.
-- **MySQL Concepts**: CRUD operations (SELECT, INSERT, UPDATE, DELETE), InnoDb engine, Indexed keys.
-- **Validation**: All forms (Login, Registration, Member Edit) are validated for data integrity.
+## Project Screenshots
 
-## Academic Compliance
+### 1. System Login & Overview
 
-- Built with unique design and logic.
-- Well-documented code with meaningful comments.
-- Follows conventional coding practices and indentation standards.
-#
+![System Overview](img/screenshots/1.png)
 
+### 2. Admin Dashboard & Analytics
+
+![Admin Dashboard](img/screenshots/2.png)
+
+### 3. Member & Staff Management
+
+![Member Management](img/screenshots/3.png)
+
+### 4. Reports & Performance Tracking
+
+![Reports](img/screenshots/4.png)
+
+---
+
+## Installation & Setup
+
+1. Copy the project folder to `htdocs`.
+2. Import the `gymnsb.sql` database file into phpMyAdmin (`gym_system`).
+3. Configure `dbcon.php` if necessary.
+4. Access the system via `http://localhost/gymsystem`.

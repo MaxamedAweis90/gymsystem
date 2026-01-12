@@ -22,4 +22,4 @@ if($result){
     echo"ERROR!!";
 }
 }
-?><!-- Visit codeastro.com for more projects -->
+?>

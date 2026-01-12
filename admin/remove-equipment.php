@@ -1,11 +1,6 @@
 <?php
-session_start();
-//the isset function to check username is already loged in and stored on the session
-if(!isset($_SESSION['user_id'])){
-header('location:../index.php');	
-}
+include 'session.php';
 ?>
-<!-- Visit codeastro.com for more projects -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,8 +23,7 @@ header('location:../index.php');
 <div id="header">
   <h1><a href="dashboard.html">Perfect Gym Admin</a></h1>
 </div>
-<!--close-Header-part--> <!-- Visit codeastro.com for more projects -->
-
+<!--close-Header-part--> 
 
 <!--top-Header-menu-->
 <?php include 'includes/topheader.php'?>
@@ -119,7 +113,7 @@ header('location:../index.php');
 <!--Footer-part-->
 
 <div class="row-fluid">
-  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By Naseeb Bajracharya</a> </div>
+  <div id="footer" class="span12"> <?php echo date("Y");?> &copy; Developed By BIT29 Group</div>
 </div>
 
 <style>

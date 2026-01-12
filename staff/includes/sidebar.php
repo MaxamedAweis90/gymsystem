@@ -13,7 +13,7 @@
       <ul>
         <li><a href="members.php">List All Members</a></li>
         <li><a href="member-entry.php">Member Entry Form</a></li>
-        <li><a href="remove-member.php">Remove Member</a></li>
+        <!-- <li><a href="remove-member.php">Remove Member</a></li> -->
         <li><a href="edit-member.php">Update Member Details</a></li>
       </ul>
     </li>
@@ -22,7 +22,7 @@
       <ul>
         <li><a href="equipment.php">List Gym Equipment</a></li>
         <li><a href="equipment-entry.php">Add Equipment</a></li>
-        <li><a href="remove-equipment.php">Remove Equipment</a></li>
+        <!-- <li><a href="remove-equipment.php">Remove Equipment</a></li> -->
         <li><a href="edit-equipment.php">Update Equipment Details</a></li>
       </ul>
     </li>
