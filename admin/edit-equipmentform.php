@@ -166,6 +166,7 @@ include 'session.php';
             <div class="form-actions text-center">
                 <!-- user's ID is hidden here -->
              <input type="hidden" name="id" value="<?php echo $row['id'];?>">
+              <button type="button" class="btn btn-warning" onclick="window.history.back();">Go Back</button>
               <button type="submit" class="btn btn-success">Submit Details</button>
             </div>
             </form>

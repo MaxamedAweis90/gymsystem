@@ -187,6 +187,7 @@ include 'session.php';
           
             
             <div class="form-actions text-center">
+              <button type="reset" class="btn btn-warning">Reset Details</button>
               <button type="submit" class="btn btn-success">Submit Member Details</button>
             </div>
             </form>

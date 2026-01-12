@@ -137,6 +137,7 @@ include 'includes/header.php';
     </div>
 
     <div class="row-fluid">
+       <?php include 'includes/message.php'; ?>
       <div class="widget-box">
         <div class="widget-title"> <span class="icon"><i class="fas fa-file-alt"></i></span>
           <h5>Services Report</h5>

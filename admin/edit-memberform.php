@@ -208,6 +208,7 @@ while($row=mysqli_fetch_array($result)){
             <div class="form-actions text-center">
              <!-- user's ID is hidden here -->
              <input type="hidden" name="id" value="<?php echo $row['user_id'];?>">
+              <button type="button" class="btn btn-warning" onclick="window.history.back();">Go Back</button>
               <button type="submit" class="btn btn-success">Update Member Details</button>
             </div>
             </form>

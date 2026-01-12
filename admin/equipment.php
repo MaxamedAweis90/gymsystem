@@ -22,7 +22,7 @@ include 'includes/header.php';
             <h5>Equipment Table</h5>
           </div>
           <div class='widget-content nopadding'>
-	  
+            <?php include 'includes/message.php'; ?>
             <table class='table table-bordered table-striped data-table'>
               <thead>
                 <tr>

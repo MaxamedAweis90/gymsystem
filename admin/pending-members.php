@@ -1,8 +1,5 @@
 <?php
-session_start();
-if(!isset($_SESSION['user_id'])){
-header('location:../index.php');	
-}
+include 'session.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,6 +39,7 @@ header('location:../index.php');
             <h5>Pending Members Table</h5>
           </div>
           <div class='widget-content nopadding'>
+            <?php include 'includes/message.php'; ?>
 	  
 	  <?php
       include "dbcon.php";

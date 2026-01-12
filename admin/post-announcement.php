@@ -1,9 +1,5 @@
 <?php
-session_start();
-//the isset function to check username is already loged in and stored on the session
-if(!isset($_SESSION['user_id'])){
-header('location:../index.php');	
-}
+include 'session.php';
 ?>
 <html lang="en">
 <head>
@@ -60,26 +56,13 @@ $qry = "insert into announcements(message,date) values ('$message','$date')";
 $result = mysqli_query($conn,$qry); //query executes
 
 if(!$result){
-  echo"<div class='container-fluid'>";
-      echo"<div class='row-fluid'>";
-      echo"<div class='span12'>";
-      echo"<div class='widget-box'>";
-      echo"<div class='widget-title'> <span class='icon'> <i class='fas fa-info'></i> </span>";
-          echo"<h5>Error Message</h5>";
-          echo"</div>";
-          echo"<div class='widget-content'>";
-              echo"<div class='error_ex'>";
-              echo"<h1 style='color:maroon;'>Error 404</h1>";
-              echo"<h3>Error occured while entering your details</h3>";
-              echo"<p>Please Try Again</p>";
-              echo"<a class='btn btn-warning btn-big'  href='edit-member.php'>Go Back</a> </div>";
-          echo"</div>";
-          echo"</div>";
-      echo"</div>";
-      echo"</div>";
-  echo"</div>";
+    $_SESSION['error_message'] = "Error occured while posting announcement.";
+    header("Location: post-announcement.php");
+    exit();
 }else {
-    echo("<script>location.href = 'index.php';</script>");
+    $_SESSION['success_message'] = "Announcement posted successfully!";
+    header("Location: index.php");
+    exit();
 }
 
 }else{

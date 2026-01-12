@@ -149,7 +149,10 @@ if (isset($_SESSION['user_id']) && isset($_SESSION['user_type'])) {
 
         <div class="form-actions">
             <span class="pull-left"><a class="flip-link btn btn-success" id="to-login">&laquo; Back to Login</a></span>
-            <span class="pull-right"><button class="btn btn-info" type="submit">Submit Membership</button></span>
+            <span class="pull-right">
+                <button class="btn btn-warning" type="reset">Reset</button>
+                <button class="btn btn-info" type="submit">Submit Membership</button>
+            </span>
         </div>
     </form>
 </div>           

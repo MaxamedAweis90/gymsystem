@@ -1,9 +1,5 @@
 <?php
-session_start();
-//the isset function to check username is already loged in and stored on the session
-if(!isset($_SESSION['user_id'])){
-header('location:../index.php');	
-}
+include 'session.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -70,50 +66,19 @@ header('location:../index.php');
             $result = mysqli_query($conn,$qry); //query executes
 
             if(!$result){
-                echo"<div class='container-fluid'>";
-                    echo"<div class='row-fluid'>";
-                    echo"<div class='span12'>";
-                    echo"<div class='widget-box'>";
-                    echo"<div class='widget-title'> <span class='icon'> <i class='fas fa-info'></i> </span>";
-                        echo"<h5>Error Message</h5>";
-                        echo"</div>";
-                        echo"<div class='widget-content'>";
-                            echo"<div class='error_ex'>";
-                            echo"<h1 style='color:maroon;'>Error 404</h1>";
-                            echo"<h3>Error occured while updating your details</h3>";
-                            echo"<p>Please Try Again</p>";
-                            echo"<a class='btn btn-warning btn-big'  href='customer-progress.php'>Go Back</a> </div>";
-                        echo"</div>";
-                        echo"</div>";
-                    echo"</div>";
-                    echo"</div>";
-                echo"</div>";
-            }else {
-
-                echo"<div class='container-fluid'>";
-                    echo"<div class='row-fluid'>";
-                    echo"<div class='span12'>";
-                    echo"<div class='widget-box'>";
-                    echo"<div class='widget-title'> <span class='icon'> <i class='fas fa-briefcase'></i> </span>";
-                        echo"<h5>Administrator</h5>";
-                        echo"</div>";
-                        echo"<div class='widget-content'>";
-                            echo"<div class='error_ex'>";
-                            echo"<h1>Successfull</h1>";
-                            echo"<h3>Changes Done Succefully!</h3>";
-                            echo"<p>The requested user's progress has been updated. Please click the button to go back.</p>";
-                            echo"<a class='btn btn-inverse btn-big'  href='index.php'>Return Home</a> </div>";
-                        echo"</div>";
-                        echo"</div>";
-                    echo"</div>";
-                    echo"</div>";
-                echo"</div>";
-
+                $_SESSION['error_message'] = "Error occured while updating details.";
+                header("Location: customer-progress.php");
+                exit();
+            } else {
+                $_SESSION['success_message'] = "Changes Done Successfully!";
+                header("Location: index.php");
+                exit();
             }
 
             }else{
                 echo"<h3>YOU ARE NOT AUTHORIZED TO REDIRECT THIS PAGE. GO BACK to <a href='index.php'> DASHBOARD </a></h3>";
             }
+?>
 ?>
                                                                
                 
