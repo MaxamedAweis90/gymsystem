@@ -36,7 +36,7 @@ This is a full-featured Gym Management System developed for our Class **BIT29** 
 
 ![Admin Dashboard](img/screenshots/2.png)
 
-### 3. Member & Staff Management
+### 3. Member Management
 
 ![Member Management](img/screenshots/3.png)
 
@@ -52,3 +52,4 @@ This is a full-featured Gym Management System developed for our Class **BIT29** 
 2. Import the `gymnsb.sql` database file into phpMyAdmin (`gym_system`).
 3. Configure `dbcon.php` if necessary.
 4. Access the system via `http://localhost/gymsystem`.
+
